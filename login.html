@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | PicTheWord</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome to PicTheWord</h1>
+        
+        <form id="loginForm" action="php/login_process.php" method="POST">
+            <!-- Room options (create or join) -->
+            <div class="room-options">
+                <input type="radio" id="createRoom" name="room_option" value="create" required>
+                <label for="createRoom">Create Room</label>
+                
+                <input type="radio" id="joinRoom" name="room_option" value="join">
+                <label for="joinRoom">Join Room</label>
+            </div>
+            
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+    
+    <script src="js/login_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Room | PicTheWord</title>
+    <link rel="stylesheet" href="css/create_join.css">
+</head>
+<body>
+    <div class="join-container">
+        <h1>Join a Game Room</h1>
+
+        <form action="php/join_process.php" method="POST">
+            <label for="room_code">Room Code:</label>
+            <input type="text" id="room_code" name="room_code" required>
+
+            <label for="in_game_name">In-game Name:</label>
+            <input type="text" id="in_game_name" name="in_game_name" required>
+
+            <button type="submit">Join Room</button>
+        </form>
+    </div>
+</body>
+</html>

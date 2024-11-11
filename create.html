@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Room | PicTheWord</title>
+    <link rel="stylesheet" href="css/create_join.css">
+</head>
+<body>
+    <div class="create-container">
+        <h1>Create a Game Room</h1>
+
+        <form id="createForm" action="php/create_process.php" method="POST">
+            <label for="in_game_name">In-game Name:</label>
+            <input type="text" id="in_game_name" name="in_game_name" required>
+
+            <label for="num_players">Number of Players:</label>
+            <select id="num_players" name="num_players" required>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+            <input type="hidden" id="room_code" name="room_code">
+
+            <div id="roomCodeContainer">
+                <p>Your Room Code: <strong id="roomCodeDisplay"></strong></p>
+                <p>Share this code with other players to join your game.</p>
+            </div>
+
+            <button type="submit">Create Room</button>
+        </form>
+    </div>
+
+    <script src="js/create_join_script.js"></script>
+</body>
+</html>

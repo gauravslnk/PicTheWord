@@ -1,0 +1,22 @@
+PicTheWord/
+├── css/
+│   ├── login.css
+│   └── game_setup.css
+│
+├── images/
+│   └── background.jpg
+│
+├── js/
+│   ├── login_script.js
+│   └── game_setup_script.js
+│
+├── php/
+│   ├── config.php
+│   ├── login_process.php
+│   └── game_setup_process.php
+│
+├── sql/
+│   └── pic_the_word.sql
+│
+├── login.html
+├── game_setup.html
